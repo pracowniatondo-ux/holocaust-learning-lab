@@ -1,0 +1,33 @@
+HOLOCAUST EDUCATION PROJECT
+Teacher notes for two interactive tool prototypes
+
+These prototypes complement the existing “Holocaust History Timeline: Match the Year to the Event” tool described in Chapter 4 of the handbook. Together, the three tools address chronology, historical source analysis, and digital/media literacy.
+
+TOOL 2 — THE EVIDENCE DESK
+Pathway: Evidence, with links to Stories and Memory
+Suggested age: 12–14
+Format: Interactive classification quiz with immediate feedback
+Learning objectives:
+• distinguish what a source confirms from an inference or an unsupported claim;
+• recognise the limits of photographs, catalogue records and personal testimony;
+• understand why historians compare sources and record uncertainty honestly.
+Classroom use: 8–12 minutes individually or 12–15 minutes in pairs. Follow up with: “Which statement was tempting to believe even though the source did not confirm it?” and “What additional source would help?”
+Important note: All records in the prototype are fictional training examples, not authentic Holocaust documents. For a classroom version using real historical evidence, replace them with a verified object record, photograph caption, diary extract or testimony from a recognised museum/archive. Preserve provenance, date, context and usage conditions.
+
+TOOL 3 — PAUSE BEFORE YOU SHARE
+Pathway: Today, with links to Choices and Evidence
+Suggested age: 12–14
+Format: Multiple-choice scenario quiz with immediate feedback
+Learning objectives:
+• identify stereotyping, emotional pressure, missing evidence and calls to share;
+• apply a basic verification routine before sharing information;
+• choose safe and constructive responses to online harassment;
+• distinguish analysis of recurring propaganda techniques from claims that contemporary situations are equivalent to the Holocaust.
+Classroom use: 8–12 minutes individually or 12–15 minutes in pairs. Follow up with: “What is the difference between checking a claim and automatically believing or disbelieving it?” and “How can we support someone who is targeted without spreading the harmful message?”
+Safety note: The social posts are fictional and do not use slurs or target real communities. Students should not be asked to search for hateful content or disclose personal experiences. Explain that Nazi propaganda operated alongside discriminatory laws, institutions, state policy and persecution; propaganda alone does not explain the Holocaust.
+
+TECHNICAL USE
+• Open Holocaust_Education_Interactive_Tools.html in a current browser. It runs locally and needs no account or internet connection after download.
+• These are working prototypes, not published Interacty projects. Recreate the question/answer structure in Interacty’s quiz or learning-game template, or ask the project team whether HTML embedding is supported by the destination website.
+• Before publication, have a Holocaust educator/history specialist review factual statements and any primary sources added.
+• Keep accessibility in mind: readable text, keyboard focus, no time pressure, and an option to complete the activity in pairs.
