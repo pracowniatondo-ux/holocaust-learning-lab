@@ -230,7 +230,7 @@ window.showRubric = function(k){
   }else{
     const lower=answer.toLowerCase();
     const hasEvidence=['evidence','source','archive','photograph','document','record','detail','shows','źród','archiw','document','surs','източ','доказ'].some(x=>lower.includes(x));
-    const hasLimit=['cannot',\"can't\",'limit','uncertain','does not show',\"doesn't show\",'nie może','nie pokaz','ogranicz','nu poate','limită','не може','не показ','огранич'].some(x=>lower.includes(x));
+    const hasLimit=['cannot',"can't",'limit','uncertain','does not show',"doesn't show",'nie może','nie pokaz','ogranicz','nu poate','limită','не може','не показ','огранич'].some(x=>lower.includes(x));
     const hasReason=['because','since','therefore','ponieważ','dlatego','deoarece','pentru că','защото','затова'].some(x=>lower.includes(x));
     const missing=[];
     if(!hasEvidence) missing.push('a concrete detail from the source');
