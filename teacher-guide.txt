@@ -11,7 +11,7 @@ The Learning Lab complements the partner-created Holocaust History Timeline acti
 Suggested age: 14+ for the full discussion, with teacher adaptation for younger groups. Some questions can be completed by learners aged 12–14 with guidance. The project's age range should be stated consistently across the handbook, website, and lesson plans.
 
 HISTORICAL SOURCES AND ATTRIBUTION
-The activity uses short adapted summaries based on these United States Holocaust Memorial Museum (USHMM) resources:
+The activity uses a clearly labelled adapted summary and a short excerpt from a published diary transcription, alongside an archival photograph and source record. The visual quiz uses the museum-hosted image URL and links learners to the original record; it does not claim ownership of the image. Check the museum's current terms and permissions before reusing the image in other publications. Sources include these United States Holocaust Memorial Museum (USHMM) resources:
 • “Nuremberg Race Laws”: https://encyclopedia.ushmm.org/content/en/article/nuremberg-laws
 • “‘Give Me Your Children’: Voices from the Lodz Ghetto”: https://encyclopedia.ushmm.org/content/en/article/give-me-your-children-voices-from-the-lodz-ghetto
 • “Teaching Materials Using Primary Sources and the Museum’s Collections”: https://www.ushmm.org/teach/teaching-materials/primary-sources-collections
@@ -25,7 +25,7 @@ Learning objectives:
 • interpret a diary as evidence of one person's experience without generalising to everyone;
 • understand how captions, provenance, and corroborating records help interpret photographs;
 • formulate a claim and state what a source cannot establish on its own.
-Format: five interactive questions with explanatory feedback, followed by a written claim.
+Format: five interactive questions with explanatory feedback, followed by a written claim. The expanded visual investigation uses an archival USHMM photograph, a revealable caption/context panel, and seven claims to classify as directly visible, confirmed by the archive record, or not inferable from the available evidence.
 Suggested time: 15–20 minutes.
 Follow-up: Ask learners to choose one source and complete: “This source helps us understand… because… However, it cannot tell us…”. Invite them to identify another source that could test or extend the claim.
 
