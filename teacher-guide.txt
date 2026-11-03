@@ -90,3 +90,32 @@ EVIDENCE — IF THESE WALLS COULD SPEAK
 The new activity adapts the handbook's method of reading buildings, photographs and objects as historical evidence. The handbook's worked example concerns the Sofia Synagogue and the history of Bulgarian Jews during the Second World War. The online task explicitly invites teachers to adapt the method to a documented local site. Supply verified dates, architect, purpose, historical context and source references before classroom use. A photograph of a building cannot establish a complete community history or prove that a building remained unchanged.
 
 The new tasks complement the existing five pathways and are designed as short digital entry points, not replacements for the handbook's full 50- or 90-minute lesson plans. The site's general age recommendation remains 14+; adapt materials for younger learners only with teacher guidance and age-appropriate sources.
+
+
+TRANSNATIONAL ARCHIVAL SOURCE LAB — POLAND, BULGARIA AND ROMANIA
+A new comparative source lab has been added to the Evidence pathway. It links directly to institutional catalogue records and asks learners to compare provenance, source type, date, place, purpose and evidential limits.
+
+Poland — Łódź:
+- POLIN Collections, “Ghetto Litzmannstadt”: contemporary photographic documentation of the former ghetto site, produced in 2017. It must not be described as a wartime photograph.
+- USHMM, “Deportation of Jewish children from the Łódź ghetto”: wartime archival photograph and catalogue record, September 1942.
+
+Bulgaria and Bulgarian-occupied territories:
+- USHMM, “Jewish Community of Monastir: Photographs for Registration”: individual and family portraits used by Bulgarian occupation authorities to register the Jewish population before deportation in March 1943.
+- USHMM, “Deportation of Jews by Bulgarian authorities”: photograph record from Lom, March 1943.
+- USHMM historical overview of Bulgaria.
+Historical precision: the March 1943 deportations discussed in these records concerned Jews in Bulgarian-occupied territories (including Macedonia and Thrace). Do not conflate these deportations with the Jewish population of Bulgaria's pre-war core provinces.
+
+Romania:
+- USHMM, “Aftermath of a pogrom in Iași”: photograph record relating to the deportation of survivors in June–July 1941.
+- Arolsen Archives, collection 11000124: 750 Romanian police documents from 1942, including correspondence, notes, protocols, lists, memoranda, statements and a map relating to deportations of Romanian Jews and Roma to Transnistria.
+- USHMM historical overview of Romania.
+
+Classroom method:
+1. Open the original institutional record; do not rely on a thumbnail or search-result caption alone.
+2. Record creator/holding institution, date, place, source type and catalogue description.
+3. Separate what is directly visible or written from the archive's contextual description and from the learner's inference.
+4. Ask what the record cannot establish and identify another source that could corroborate or complicate the interpretation.
+5. Do not treat photographs, maps, administrative records and site documentation as interchangeable.
+6. Check rights and access conditions before downloading, reproducing or redistributing images or documents. Links in the Learning Lab point to institutional records; they do not grant reuse permission.
+
+The comparative activity is a guided entry point to the collections, not a substitute for detailed examination of each individual record. The teacher should preview the selected item and consider the class's age, prior knowledge and emotional readiness.
