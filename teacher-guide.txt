@@ -1,33 +1,66 @@
 HOLOCAUST EDUCATION PROJECT
-Teacher notes for two interactive tool prototypes
+Learning Lab — teacher notes
+Updated: source-based learning activities
 
-These prototypes complement the existing “Holocaust History Timeline: Match the Year to the Event” tool described in Chapter 4 of the handbook. Together, the three tools address chronology, historical source analysis, and digital/media literacy.
+OVERVIEW
+The Learning Lab complements the partner-created Holocaust History Timeline activity. It now includes three source-based activities:
+1. The Evidence Desk — analyse a law, a diary, and a photograph/caption.
+2. Choices Under Pressure — examine coercion, unequal power, and constrained decisions during the September 1942 deportations from the Łódź ghetto.
+3. Pause Before You Share — analyse propaganda in its historical context and practise responsible verification of contemporary information.
 
-TOOL 2 — THE EVIDENCE DESK
-Pathway: Evidence, with links to Stories and Memory
-Suggested age: 12–14
-Format: Interactive classification quiz with immediate feedback
+Suggested age: 14+ for the full discussion, with teacher adaptation for younger groups. Some questions can be completed by learners aged 12–14 with guidance. The project's age range should be stated consistently across the handbook, website, and lesson plans.
+
+HISTORICAL SOURCES AND ATTRIBUTION
+The activity uses short adapted summaries based on these United States Holocaust Memorial Museum (USHMM) resources:
+• “Nuremberg Race Laws”: https://encyclopedia.ushmm.org/content/en/article/nuremberg-laws
+• “‘Give Me Your Children’: Voices from the Lodz Ghetto”: https://encyclopedia.ushmm.org/content/en/article/give-me-your-children-voices-from-the-lodz-ghetto
+• “Teaching Materials Using Primary Sources and the Museum’s Collections”: https://www.ushmm.org/teach/teaching-materials/primary-sources-collections
+• “Primary Source Databases”: https://www.ushmm.org/collections/plan-a-research-visit/electronic-resources/primary-source-databases
+
+The source cards explicitly label the historical text as an adapted summary, not a direct quotation. The site links to the museum's full historical account and context. Before formal educational use, check links and the museum's current usage terms. Do not copy or reproduce archival images without checking rights and permissions.
+
+ACTIVITY 1 — THE EVIDENCE DESK
 Learning objectives:
-• distinguish what a source confirms from an inference or an unsupported claim;
-• recognise the limits of photographs, catalogue records and personal testimony;
-• understand why historians compare sources and record uncertainty honestly.
-Classroom use: 8–12 minutes individually or 12–15 minutes in pairs. Follow up with: “Which statement was tempting to believe even though the source did not confirm it?” and “What additional source would help?”
-Important note: All records in the prototype are fictional training examples, not authentic Holocaust documents. For a classroom version using real historical evidence, replace them with a verified object record, photograph caption, diary extract or testimony from a recognised museum/archive. Preserve provenance, date, context and usage conditions.
+• distinguish a law's text from evidence of how it was enforced in a particular place;
+• interpret a diary as evidence of one person's experience without generalising to everyone;
+• understand how captions, provenance, and corroborating records help interpret photographs;
+• formulate a claim and state what a source cannot establish on its own.
+Format: five interactive questions with explanatory feedback, followed by a written claim.
+Suggested time: 15–20 minutes.
+Follow-up: Ask learners to choose one source and complete: “This source helps us understand… because… However, it cannot tell us…”. Invite them to identify another source that could test or extend the claim.
 
-TOOL 3 — PAUSE BEFORE YOU SHARE
-Pathway: Today, with links to Choices and Evidence
-Suggested age: 12–14
-Format: Multiple-choice scenario quiz with immediate feedback
+ACTIVITY 2 — CHOICES UNDER PRESSURE
 Learning objectives:
-• identify stereotyping, emotional pressure, missing evidence and calls to share;
-• apply a basic verification routine before sharing information;
-• choose safe and constructive responses to online harassment;
-• distinguish analysis of recurring propaganda techniques from claims that contemporary situations are equivalent to the Holocaust.
-Classroom use: 8–12 minutes individually or 12–15 minutes in pairs. Follow up with: “What is the difference between checking a claim and automatically believing or disbelieving it?” and “How can we support someone who is targeted without spreading the harmful message?”
-Safety note: The social posts are fictional and do not use slurs or target real communities. Students should not be asked to search for hateful content or disclose personal experiences. Explain that Nazi propaganda operated alongside discriminatory laws, institutions, state policy and persecution; propaganda alone does not explain the Holocaust.
+• identify who held coercive power during the September 1942 deportations from the Łódź ghetto;
+• distinguish constrained action from a free choice;
+• discuss institutional roles without erasing Nazi responsibility or treating the Jewish population as a single voice;
+• identify whose perspectives and what additional records are needed.
+Format: five interactive case questions with explanatory feedback, followed by a written reflection.
+Suggested time: 15–20 minutes.
+Facilitation note: Do not ask students to decide whether people in the ghetto made “good” or “bad” choices from a safe distance. Keep German occupation, threats, imprisonment, and the extreme lack of safe options in view. Avoid simplistic hero/villain framing. Invite careful evidence-based discussion of institutional roles and the range of experiences.
 
-TECHNICAL USE
-• Open Holocaust_Education_Interactive_Tools.html in a current browser. It runs locally and needs no account or internet connection after download.
-• These are working prototypes, not published Interacty projects. Recreate the question/answer structure in Interacty’s quiz or learning-game template, or ask the project team whether HTML embedding is supported by the destination website.
-• Before publication, have a Holocaust educator/history specialist review factual statements and any primary sources added.
-• Keep accessibility in mind: readable text, keyboard focus, no time pressure, and an option to complete the activity in pairs.
+ACTIVITY 3 — PAUSE BEFORE YOU SHARE
+Learning objectives:
+• identify stereotypes and claims that lack verifiable evidence;
+• trace an image or claim to its original source;
+• analyse propaganda in relation to audience, purpose, historical context, and state policy;
+• compare communication techniques without equating distinct historical situations;
+• choose responsible responses to harmful online content.
+Format: five interactive questions with explanatory feedback, followed by a verification plan.
+Suggested time: 15–20 minutes.
+Follow-up: Learners write three checks they would make before sharing an uncited historical image.
+
+SAFE AND RESPECTFUL CLASSROOM USE
+• Preview the materials and set expectations for respectful discussion.
+• Explain that the Holocaust involved systematic, state-sponsored persecution and murder; propaganda was one part of a wider system that included law, institutions, dispossession, deportation, and mass murder.
+• Do not ask learners to search for hateful content, reproduce slurs, or disclose personal experiences of discrimination.
+• Make space for learners to pause or ask questions.
+• Acknowledge that testimonies are individual accounts and that not every victim or survivor had the same experience.
+• Use historical photographs and testimony with context; avoid using traumatic material merely to provoke shock.
+• Check all sources, translations, captions, and rights before adapting the activities for publication or classroom handouts.
+
+TECHNICAL NOTES
+• The activities are static HTML, CSS, and JavaScript. No student accounts, tracking, analytics, or third-party JavaScript libraries are used.
+• Learner answers in the reflection boxes are not sent to a server; they remain in the open browser page and are not saved when the page is closed or refreshed.
+• Keyboard focus indicators and immediate written feedback are included. The activities are not timed.
+• The chronology activity is hosted externally by the project partner in Romania.
