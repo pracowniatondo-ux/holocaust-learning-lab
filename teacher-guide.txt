@@ -136,13 +136,13 @@ TIMELINE / MAP — IMPORTANT DISTINCTIONS
 The map is a schematic locator with approximate placement. Dashed lines indicate selected documented directions and are not surveyed railway tracks or exhaustive deportation routes. It deliberately separates:
 - Łódź ghetto → Chełmno, including the September 1942 Gehsperre action. USHMM notes that about 15,000 Jews were deported during this action; sick people, older people and children under ten were specifically targeted.
 - Bulgarian-occupied Macedonia: roundups in Skopje, Bitola and Štip; assembly at the Tobacco Monopoly transit camp in Skopje; three transports to Treblinka between 22 and 29 March 1943.
-- Bulgarian-occupied Thrace: a distinct route described by USHMM via the Danube port of Lom and onward through Vienna to Treblinka.
+- Bulgarian-occupied Thrace: a distinct set of deportations. USHMM identifies assembly points at Gorna Dzhumaya and Dupnitsa; for a group from Kavala, Seres and Drama, it describes the onward route via Lom and Vienna to Treblinka as probable, not certain for every deportee.
 - Romania: the Iași pogrom and subsequent deportations by train to Călărași and Podu Iloaiei; a separate regional history of Romanian-administered Transnistria, which must not be represented as one single camp or route.
 - Theresienstadt/Terezín: established in November 1941; deportations from January 1942 to other ghettos, camps, killing sites and killing centres.
 
-The distinction between the Jewish population in Bulgaria's pre-war core provinces and Jews in territories occupied by Bulgaria in 1941 is essential. Bulgarian authorities deported Jews from occupied territories including Macedonia and Thrace in March 1943; the government did not deport Jews from Bulgaria's pre-war core provinces to Nazi killing centres during this period. This does not mean that Jews in Bulgaria proper were free from antisemitic laws, restrictions, dispossession or persecution.
+The distinction between the Jewish population in Bulgaria's pre-war core provinces and Jews in territories occupied by Bulgaria in 1941 is essential. In May 1943, almost 20,000 Jews were forcibly expelled from Sofia to the countryside; this must not be confused with deportation to Nazi killing centres. Bulgarian authorities deported 11,343 Jews from occupied territories including Macedonia, Thrace and Pirot in March 1943; the government did not deport Jews from Bulgaria's pre-war core provinces to Nazi killing centres during this period. This does not mean that Jews in Bulgaria proper were free from antisemitic laws, restrictions, dispossession or persecution.
 
-The map's 1933 and 1935 entries are national-level milestones and are not plotted as a location-specific event. The 1945 entry is a broad end-of-war marker, not a single local liberation event.
+The map's 1933 and 1935 entries are national-level milestones and are not plotted as a location-specific event. The 1933 entry should specify that President Paul von Hindenburg appointed Adolf Hitler chancellor on 30 January; avoid implying that the Nazis took power through a straightforward electoral victory. The 1945 entry is a broad end-of-war marker, not a single local liberation event.
 
 KEY INSTITUTIONAL SOURCES FOR THE TIMELINE
 - USHMM, Łódź: https://encyclopedia.ushmm.org/content/en/article/lodz
