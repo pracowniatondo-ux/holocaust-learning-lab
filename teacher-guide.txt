@@ -3,10 +3,13 @@ Learning Lab — teacher notes
 Updated: source-based learning activities
 
 OVERVIEW
-The Learning Lab complements the partner-created Holocaust History Timeline activity. It now includes five learning areas across the five handbook pathways:
+The Learning Lab complements the partner-created Holocaust History Timeline activity and includes five learning pathways: Stories, Choices, Evidence, Memory and Today. A separate Teaching & Learning Resources hub now provides lesson plans, a schematic timeline/map, glossary, source-analysis method and archive directory.
 1. The Evidence Desk — analyse a law, a diary, and a photograph/caption.
 2. Choices Under Pressure — examine coercion, unequal power, and constrained decisions during the September 1942 deportations from the Łódź ghetto.
-3. Pause Before You Share — analyse propaganda in its historical context and practise responsible verification of contemporary information.\n4. Stories — object-based inquiry, statistics alongside individual biographies/testimonies, and evidence-informed museum labels.\n5. Memory — local Jewish history source investigation, memorial analysis and a historically grounded memorial design brief.\nThe Today pathway is also extended with The Power of Words, Letters Across Time, Standing Up Against Hate and From Memory to Action.
+3. Pause Before You Share — analyse propaganda in its historical context and practise responsible verification of contemporary information.
+4. Stories — object-based inquiry, statistics alongside individual biographies/testimonies, and evidence-informed museum labels.
+5. Memory — local Jewish history source investigation, memorial analysis and a historically grounded memorial design brief.
+The resource hub is available at teaching-resources.html. It offers three 45- and 90-minute lesson plans in teacher and student views. The timeline/map is a selected locator, not a complete chronology or a reconstruction of wartime borders.
 
 Suggested age: 14+ for the full discussion, with teacher adaptation for younger groups. Some questions can be completed by learners aged 12–14 with guidance. The project's age range should be stated consistently across the handbook, website, and lesson plans.
 
@@ -119,3 +122,46 @@ Classroom method:
 6. Check rights and access conditions before downloading, reproducing or redistributing images or documents. Links in the Learning Lab point to institutional records; they do not grant reuse permission.
 
 The comparative activity is a guided entry point to the collections, not a substitute for detailed examination of each individual record. The teacher should preview the selected item and consider the class's age, prior knowledge and emotional readiness.
+
+
+TEACHING & LEARNING RESOURCES HUB — CONTENT AND HISTORICAL NOTES
+The new teaching-resources.html page includes three modular lesson plans:
+1. What can a photograph tell us? — visual evidence, caption, provenance and inference.
+2. One testimony is not every story — individual testimony, contextualisation and limits of generalisation.
+3. Three countries, different records — comparison of institutional records from Poland, Bulgaria/Bulgarian-occupied territories and Romania.
+
+Each plan includes timings for 45- and 90-minute lessons, objectives, preparation, discussion prompts and teacher guidance. Student view displays a shorter task sequence; teacher view displays the facilitation notes. These plans are starting points and should be adapted to the class, curriculum and selected source records.
+
+TIMELINE / MAP — IMPORTANT DISTINCTIONS
+The map is a schematic locator with approximate placement. Dashed lines indicate selected documented directions and are not surveyed railway tracks or exhaustive deportation routes. It deliberately separates:
+- Łódź ghetto → Chełmno, including the September 1942 Gehsperre action. USHMM notes that about 15,000 Jews were deported during this action; sick people, older people and children under ten were specifically targeted.
+- Bulgarian-occupied Macedonia: roundups in Skopje, Bitola and Štip; assembly at the Tobacco Monopoly transit camp in Skopje; three transports to Treblinka between 22 and 29 March 1943.
+- Bulgarian-occupied Thrace: a distinct route described by USHMM via the Danube port of Lom and onward through Vienna to Treblinka.
+- Romania: the Iași pogrom and subsequent deportations by train to Călărași and Podu Iloaiei; a separate regional history of Romanian-administered Transnistria, which must not be represented as one single camp or route.
+- Theresienstadt/Terezín: established in November 1941; deportations from January 1942 to other ghettos, camps, killing sites and killing centres.
+
+The distinction between the Jewish population in Bulgaria's pre-war core provinces and Jews in territories occupied by Bulgaria in 1941 is essential. Bulgarian authorities deported Jews from occupied territories including Macedonia and Thrace in March 1943; the government did not deport Jews from Bulgaria's pre-war core provinces to Nazi killing centres during this period. This does not mean that Jews in Bulgaria proper were free from antisemitic laws, restrictions, dispossession or persecution.
+
+The map's 1933 and 1935 entries are national-level milestones and are not plotted as a location-specific event. The 1945 entry is a broad end-of-war marker, not a single local liberation event.
+
+KEY INSTITUTIONAL SOURCES FOR THE TIMELINE
+- USHMM, Łódź: https://encyclopedia.ushmm.org/content/en/article/lodz
+- USHMM, animated map of the Łódź ghetto: https://encyclopedia.ushmm.org/content/en/animated-map/the-lodz-ghetto
+- USHMM, deportation of Jewish children from the Łódź ghetto: https://encyclopedia.ushmm.org/content/en/photo/deportation-of-jewish-children-from-the-lodz-ghetto
+- USHMM, Theresienstadt: https://encyclopedia.ushmm.org/content/en/article/theresienstadt
+- USHMM, Romania: https://encyclopedia.ushmm.org/content/en/article/romania
+- USHMM, Transnistria Governorate: https://encyclopedia.ushmm.org/content/en/article/transnistria-governorate
+- USHMM, Bulgaria: https://encyclopedia.ushmm.org/content/en/article/bulgaria
+- USHMM, deportation of Monastir Jewry: https://encyclopedia.ushmm.org/content/en/article/the-holocaust-in-macedonia-deportation-of-monastir-jewry
+- Arolsen Archives, police documentation on Romanian Jews and Roma deported to Transnistria (collection 11000124): https://collections.arolsen-archives.org/en/archive/7-6-2_11000124/
+
+GLOSSARY AND SOURCE-INQUIRY GUIDANCE
+The glossary defines ghetto, deportation, collaboration, resistance, testimony, perpetrator, witness/bystander, victim/survivor, memory and antisemitism. These are working definitions, not exhaustive legal or historiographical definitions. Encourage students to apply terms to documented actions and contexts rather than populations as a whole.
+
+The source-analysis sequence asks learners to identify source type and provenance; separate observation from inference; consider creator, audience and purpose; read captions critically; identify absences and limitations; corroborate with independent evidence; and make a carefully qualified claim. Do not ask learners to role-play victims or perpetrators, invent testimony, infer identity or emotion from appearance, or reproduce hateful propaganda without critical framing.
+
+ACCESSIBILITY AND TECHNICAL REVIEW NOTES
+The resources use semantic HTML sections, keyboard-operable timeline buttons and map markers, visible focus styles, responsive layouts, and reduced-motion support. The map is schematic and should be paired with the text descriptions; it is not a substitute for a detailed historical atlas. The interactive map and timeline need a final manual browser check at desktop and mobile widths, including keyboard-only navigation and screen-reader announcement of selected event details. Student writing is not submitted or stored by the site.
+
+EDITORIAL REVIEW STATUS
+The current content has been checked for JavaScript syntax and for the presence of key source links. This is not a substitute for a specialist historian's review or a full live-browser accessibility audit. Before formal publication, ask a Holocaust historian or a relevant museum educator to review the chronology, terminology, map routes and teaching notes; check each archive item's current caption, catalogue record and reuse conditions.
