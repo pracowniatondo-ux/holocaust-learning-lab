@@ -3,10 +3,10 @@ Learning Lab — teacher notes
 Updated: source-based learning activities
 
 OVERVIEW
-The Learning Lab complements the partner-created Holocaust History Timeline activity. It now includes three source-based activities:
+The Learning Lab complements the partner-created Holocaust History Timeline activity. It now includes five learning areas across the five handbook pathways:
 1. The Evidence Desk — analyse a law, a diary, and a photograph/caption.
 2. Choices Under Pressure — examine coercion, unequal power, and constrained decisions during the September 1942 deportations from the Łódź ghetto.
-3. Pause Before You Share — analyse propaganda in its historical context and practise responsible verification of contemporary information.
+3. Pause Before You Share — analyse propaganda in its historical context and practise responsible verification of contemporary information.\n4. Stories — object-based inquiry, statistics alongside individual biographies/testimonies, and evidence-informed museum labels.\n5. Memory — local Jewish history source investigation, memorial analysis and a historically grounded memorial design brief.\nThe Today pathway is also extended with The Power of Words, Letters Across Time, Standing Up Against Hate and From Memory to Action.
 
 Suggested age: 14+ for the full discussion, with teacher adaptation for younger groups. Some questions can be completed by learners aged 12–14 with guidance. The project's age range should be stated consistently across the handbook, website, and lesson plans.
 
@@ -64,3 +64,16 @@ TECHNICAL NOTES
 • Learner answers in the reflection boxes are not sent to a server; they remain in the open browser page and are not saved when the page is closed or refreshed.
 • Keyboard focus indicators and immediate written feedback are included. The activities are not timed.
 • The chronology activity is hosted externally by the project partner in Romania.
+
+
+ADDITIONAL HANDBOOK-ALIGNED LEARNING TASKS
+STORIES — A SUITCASE, A PHOTOGRAPH, A NAME
+The online task follows the handbook's object-based inquiry: observe material details; formulate questions and cautious hypotheses; then check the museum/archive record and provenance. The object alone does not establish its owner's thoughts or complete life story. The extension “Behind Every Number Is a Story” asks learners to consider what aggregate statistics can show and what an individual biography or testimony can add. Teachers must select and cite a verified statistic and a documented individual account; clarify estimates versus exact counts. The museum-label task requires at least two source-supported details, a stated limitation and an exact source reference. Imagined writing must never be presented as authentic testimony.
+
+MEMORY — MEMORY DETECTIVES, MONUMENTS SPEAK, DESIGNING A MEMORIAL
+The local-history investigation uses teacher-selected maps, photographs, building/cemetery records, museum objects, newspaper extracts or oral-history records. Students record source title, creator/institution, date (if known), and location. They distinguish documented facts from hypotheses and identify what further evidence is needed. The memorial analysis asks who is commemorated, who created the memorial, when and where, what the design communicates, and what it leaves out. The design brief requires historical evidence, a reasoned location, accessible interpretation and clear limits; students must not invent names or personal histories.
+
+TODAY — THE POWER OF WORDS, LETTERS ACROSS TIME, FROM MEMORY TO ACTION
+The language exercise uses neutral fictional examples for practice, followed by a teacher-selected and verified historical source. Analyse creator, audience, purpose, emotional techniques, in-group/out-group framing, omissions and historical context. Do not reproduce slurs for shock value. The letter task is a reflective writing exercise based on a documented source; it must not claim to speak for a victim or invent historical quotations. “From Memory to Action” asks for a specific, realistic civic or heritage action grounded in the learning.
+
+All new tasks are structured templates where the handbook requires teachers to select a local or individual source. The website does not fabricate a named object, local resident, memorial record or testimony. Teachers should supply and cite the exact verified source before classroom use.
