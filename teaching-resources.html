@@ -271,6 +271,20 @@ skopje:'What do assembly and transport records tell us about the deportation of 
 bitola:'How do local community records and deportation documentation help reconstruct the fate of Jews from Bitola?',
 terezin:'How did Terezín function as a ghetto, transit site and propaganda setting at different moments?'
 };
+const placeMaterials={
+lodz:[['Photographs, film and oral history · USHMM','https://encyclopedia.ushmm.org/content/en/article/lodz','Includes photographs, a short film and testimony by Leo Schneiderman and Blanka Rothschild.'],['Archival collections · Jewish Historical Institute','https://www.jhi.pl/en/collections/archives','Post-war collected testimonies and documents, including records connected with the Łódź ghetto.']],
+chelmno:[['Chełmno · Holocaust Encyclopedia','https://encyclopedia.ushmm.org/content/en/article/chelmno','Historical overview and source references for the killing centre.'],['Primary-source collections · USHMM','https://www.ushmm.org/collections','Search the museum catalogue for documents, photographs and survivor accounts.']],
+treblinka:[['Treblinka photographs · USHMM','https://encyclopedia.ushmm.org/content/en/gallery/treblinka-photographs','Includes the deportation route from Thrace via Lom and the uprising aftermath.'],['Survivor testimony · Abraham Bomba','https://encyclopedia.ushmm.org/en/a-z/oral-history','Search the oral-history catalogue for Abraham Bomba’s testimony about Treblinka.']],
+iasi:[['Romania · Holocaust Encyclopedia','https://encyclopedia.ushmm.org/content/en/article/romania','Context for the Iași pogrom, Romanian state policy and deportations.'],['Oral history archive · USHMM','https://www.ushmm.org/collections/the-museums-collections/about/oral-history/','Search eyewitness accounts; check each interview’s location, date and access conditions.']],
+calarasi:[['Romania · Holocaust Encyclopedia','https://encyclopedia.ushmm.org/content/en/article/romania','Context for deportations from Iași to Călărași and Podu Iloaiei.'],['Jewish Historical Institute archive','https://www.jhi.pl/en/collections/archives','A starting point for survivor testimonies and documentation; not all records concern this destination.']],
+podu:[['Romania · Holocaust Encyclopedia','https://encyclopedia.ushmm.org/content/en/article/romania','Context for deportations from Iași to Podu Iloaiei and Călărași.'],['Oral history archive · USHMM','https://www.ushmm.org/collections/the-museums-collections/about/oral-history/','Search testimonies and verify each interview’s route and circumstances.']],
+transnistria:[['Transnistria Governorate · USHMM','https://encyclopedia.ushmm.org/content/en/article/transnistria-governorate','Overview of Romanian-administered occupation, deportation and mass violence.'],['Arolsen Archives','https://arolsen-archives.org/en/search-explore/','Search documents about persecution, forced labour, displacement and post-war tracing.']],
+sofia:[['Bulgaria · Holocaust Encyclopedia','https://encyclopedia.ushmm.org/content/en/article/bulgaria','Distinguishes the pre-war core provinces from Bulgarian-occupied territories.'],['USHMM collections','https://www.ushmm.org/collections','Search photographs and documents; check catalogue records and rights information.']],
+lom:[['Treblinka photographs · USHMM','https://encyclopedia.ushmm.org/content/en/gallery/treblinka-photographs','Includes a photograph captioned as a scene during deportation of Jews from Thrace in Lom, March 1943.'],['Bulgaria · Holocaust Encyclopedia','https://encyclopedia.ushmm.org/content/en/article/bulgaria','Explains deportations from Bulgarian-occupied Thrace and the probable route via Lom.']],
+skopje:[['Photographs of deportation from Skopje · USHMM','https://encyclopedia.ushmm.org/content/en/gallery/treblinka-photographs','Includes photographs of Macedonian Jews preparing to board deportation trains in Skopje.'],['Deportation of Monastir Jewry · USHMM','https://encyclopedia.ushmm.org/content/en/article/the-holocaust-in-macedonia-deportation-of-monastir-jewry','Historical overview of the March 1943 roundup and deportations.']],
+bitola:[['Deportation of Monastir Jewry · USHMM','https://encyclopedia.ushmm.org/content/en/article/the-holocaust-in-macedonia-deportation-of-monastir-jewry','Documents the roundup of Jews from Bitola, Skopje and Štip and transports to Treblinka.'],['USHMM collections','https://www.ushmm.org/collections','Search for records relating to Monastir (Bitola); confirm item-level provenance.']],
+terezin:[['Theresienstadt · Holocaust Encyclopedia','https://encyclopedia.ushmm.org/content/en/article/theresienstadt','Historical overview of the ghetto, deportations and Nazi propaganda.'],['USHMM collections','https://www.ushmm.org/collections','Search photographs, documents and testimony connected with Theresienstadt.']]
+};
 function showEvent(key,selectedPlace){
  const e=events[key];if(!e)return;
  document.querySelectorAll('.event').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.event===key)));
@@ -282,6 +296,18 @@ function showEvent(key,selectedPlace){
  const question=document.createElement('div');question.className='place-context';question.textContent='INVESTIGATE: '+(placeQuestions[selectedPlace||e.place]||'Which additional source could confirm, complicate or challenge this account?');
  const link=document.createElement('a');link.href=e.source;link.target='_blank';link.rel='noopener';link.style.color='#f8f6ef';link.textContent='Read the institutional source ↗';
  detail.append(title,body,question,link);
+ const materials=placeMaterials[selectedPlace||e.place]||[];
+ if(materials.length){
+  const heading=document.createElement('b');heading.textContent='Explore photographs, documents and testimony';heading.style.display='block';heading.style.marginTop='16px';heading.style.fontSize='14px';
+  const list=document.createElement('ul');list.style.margin='7px 0 0';list.style.paddingLeft='19px';
+  materials.forEach(item=>{
+   const li=document.createElement('li');li.style.margin='8px 0';
+   const a=document.createElement('a');a.href=item[1];a.target='_blank';a.rel='noopener';a.style.color='#d7f36a';a.textContent=item[0]+' ↗';
+   const note=document.createElement('div');note.textContent=item[2];note.style.fontSize='12px';note.style.color='#e3ece8';
+   li.append(a,note);list.append(li);
+  });
+  detail.append(heading,list);
+ }
 }
 document.querySelectorAll('.event').forEach(b=>b.addEventListener('click',()=>showEvent(b.dataset.event)));
 document.querySelectorAll('.pin').forEach(p=>{p.addEventListener('click',()=>showEvent(placeEvents[p.dataset.place],p.dataset.place));p.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();showEvent(placeEvents[p.dataset.place],p.dataset.place);}});});
