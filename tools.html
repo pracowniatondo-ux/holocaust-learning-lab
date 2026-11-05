@@ -95,6 +95,51 @@ main.wrap{padding-top:26px}
 .listen-link{display:inline-flex;padding:11px 15px;border-radius:99px;background:#123b46;color:#fff!important;font-weight:800;text-decoration:none}
 .listen-link:hover{background:#245c64;color:#fff}
 @media(max-width:650px){.listen-steps{grid-template-columns:1fr}}
+
+/* THREE SHORT-FORM LEARNING MODULES */
+.teen-modules{margin:30px 0 34px}
+.module-heading{display:flex;align-items:end;justify-content:space-between;gap:22px;margin:0 0 16px}
+.module-heading h2{font-size:clamp(27px,4vw,38px);font-weight:850;letter-spacing:-.05em;margin:7px 0 0}
+.module-heading>p{max-width:380px;color:var(--muted);font-size:13px;margin:0 0 4px}
+.module-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:13px;align-items:stretch}
+.mini-module{background:#fff;border:1px solid var(--line);border-radius:17px;padding:19px;box-shadow:0 12px 28px #102f3b0a;display:flex;flex-direction:column;min-width:0}
+.history-module{background:#f0f5eb;border-top:5px solid var(--gold)}
+.case-module{background:#f7efeb;border-top:5px solid #ef684d}
+.myth-module{background:#edf3f4;border-top:5px solid #4c8790}
+.module-top{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.module-label{font-size:9px;letter-spacing:.12em;font-weight:900;color:#586b70}
+.module-symbol{width:30px;height:30px;display:grid;place-items:center;border:1px solid #aabbb3;border-radius:50%;font-size:17px}
+.mini-module h3{font-size:21px;line-height:1.08;letter-spacing:-.04em;font-weight:850;margin:16px 0 8px}
+.module-intro{font-size:12px;line-height:1.5;color:var(--muted);min-height:55px;margin:0 0 14px}
+.history-switch{display:flex;gap:5px;margin:0 0 10px}
+.history-step{flex:1;border:1px solid #cbd7cc;border-radius:8px;padding:8px 3px;background:#fff;font-weight:850;font-size:12px;cursor:pointer}
+.history-step.is-active{background:#173f47;color:#fff;border-color:#173f47}
+.history-detail{background:#fff;border:1px solid #d9e3d9;border-radius:11px;padding:13px;min-height:148px}
+.history-detail span{font-size:9px;letter-spacing:.13em;font-weight:900;color:#a34f37}
+.history-detail h4{font-size:17px;line-height:1.15;margin:8px 0 6px}
+.history-detail p{font-size:12px;line-height:1.5;margin:0;color:#43575d}
+.case-evidence{background:#fff;border:1px solid #ead8d0;border-radius:11px;padding:13px;margin:0 0 12px}
+.case-stamp{display:inline-block;font-size:9px;letter-spacing:.14em;font-weight:900;color:#a34f37;border:1px solid #d8a99a;padding:4px 7px;border-radius:4px}
+.case-evidence p{font-size:12px;line-height:1.5;margin:9px 0 0}
+.case-question{font-size:12px;font-weight:850;margin:0 0 8px}
+.case-choices{display:grid;gap:7px}
+.case-choices button{padding:10px;text-align:left;border:1px solid #e2cfc6;border-radius:9px;background:#fff;font:650 11px/1.4 inherit;cursor:pointer}
+.case-choices button:hover:not(:disabled){border-color:#a34f37}
+.case-choices button:disabled,.myth-choices button:disabled{cursor:default;opacity:.9}
+.case-choices button.is-right{background:#e7f4e9;border:2px solid #3b7650}
+.case-choices button.is-wrong{background:#fff0eb;border:2px solid #b45b3f}
+.myth-statement{display:grid;place-items:center;text-align:center;background:#fff;border:1px solid #d5e1e2;border-radius:12px;padding:20px 14px;min-height:112px;font-size:17px;line-height:1.2;font-weight:850;letter-spacing:-.025em}
+.myth-choices{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:12px}
+.myth-choices button{border:1px solid #b8ccce;background:#fff;border-radius:9px;padding:11px;font-weight:900;font-size:11px;letter-spacing:.08em;cursor:pointer}
+.myth-choices button:hover:not(:disabled){background:#e1eff0}
+.myth-choices button.is-right{background:#e4f3e8;border:2px solid #3b7650}
+.myth-choices button.is-wrong{background:#fff0eb;border:2px solid #b45b3f}
+.module-feedback{font-size:11px;line-height:1.5;padding:10px 11px;margin-top:10px;background:#ffffffb8;border-radius:9px;min-height:45px;color:#43575d}
+.module-feedback strong{display:block;color:#173f47;margin-bottom:3px}
+.module-source{font-size:10px;line-height:1.4;color:#64757a;margin:12px 0 0}
+.module-source a{font-weight:800}
+@media(max-width:850px){.module-grid{grid-template-columns:1fr 1fr}.myth-module{grid-column:1/-1}}
+@media(max-width:600px){.module-grid{grid-template-columns:1fr}.myth-module{grid-column:auto}.module-heading{display:block}.module-heading>p{margin-top:8px}.module-intro{min-height:0}}
 </style>
 </head>
 <body>
@@ -115,6 +160,44 @@ main.wrap{padding-top:26px}
   <article class="story-card" data-number="01"><div><div class="orbit">⌕</div><div class="eyebrow">THE SOURCE FILE</div><h3>One image.<br>More than one question.</h3><p>Separate what you can see from what the archive can confirm.</p></div><a href="#visual-lab">Open the visual investigation ↗</a></article>
   <article class="story-card" data-number="02"><div><div class="orbit">↗</div><div class="eyebrow">THE DECISION ROOM</div><h3>Pressure changes<br>what choices mean.</h3><p>Explore historical context before drawing conclusions about people.</p></div><a href="#activity-choices" onclick="switchActivity('choices')">Enter the case ↗</a></article>
   <article class="story-card" data-number="03"><div><div class="orbit">◎</div><div class="eyebrow">THE DIGITAL WORLD</div><h3>Pause. Check.<br>Then share.</h3><p>Use source-checking skills when a dramatic claim appears in your feed.</p></div><a href="#activity-today" onclick="switchActivity('today')">Try the challenge ↗</a></article>
+</section>
+<section class="teen-modules" aria-label="Quick interactive learning modules">
+<div class="module-heading"><div><div class="eyebrow">QUICK EXPLORES · 3 WAYS IN</div><h2>Pick a starting point.</h2></div><p>Short interactive stops. Explore one now, then go deeper in the activities below.</p></div>
+<div class="module-grid">
+<article class="mini-module history-module" id="history-sixty">
+<div class="module-top"><span class="module-label">01 · HISTORY IN 60 SECONDS</span><span class="module-symbol">↗</span></div>
+<h3>How did persecution become genocide?</h3>
+<p class="module-intro">The Holocaust was not one event that happened all at once. Move through key stages of an evolving process.</p>
+<div class="history-switch" role="group" aria-label="Choose a historical stage">
+<button type="button" class="history-step is-active" data-history="0">1933</button><button type="button" class="history-step" data-history="1">1935</button><button type="button" class="history-step" data-history="2">1939</button><button type="button" class="history-step" data-history="3">1941</button><button type="button" class="history-step" data-history="4">1945</button>
+</div>
+<div class="history-detail" aria-live="polite"><span id="history-date">1933 · DICTATORSHIP</span><h4 id="history-title">A democracy is dismantled</h4><p id="history-copy">After Adolf Hitler became chancellor on 30 January, the Nazi Party rapidly transformed Germany into a one-party dictatorship. Persecution of Jews began almost immediately.</p></div>
+<p class="module-source">Based on the <a href="https://encyclopedia.ushmm.org/content/en/timeline/holocaust" target="_blank" rel="noopener">USHMM Holocaust timeline ↗</a>. This is a brief overview, not a complete chronology.</p>
+</article>
+<article class="mini-module case-module" id="interactive-case">
+<div class="module-top"><span class="module-label">02 · INTERACTIVE CASE FILE</span><span class="module-symbol">⌕</span></div>
+<h3>Can this source prove it?</h3>
+<p class="module-intro">CASE 01 / ŁÓDŹ GHETTO · MARCH 1942</p>
+<div class="case-evidence"><span class="case-stamp">ARCHIVE NOTE</span><p>A young diarist recorded severe food shortages and daily hunger in the Łódź ghetto. The diary is one person’s record, preserved and published with historical context by a museum.</p></div>
+<p class="case-question">Which claim is supported by this source?</p>
+<div class="case-choices">
+<button type="button" data-case="0">It tells us exactly how every ghetto resident experienced hunger.</button>
+<button type="button" data-case="1">It documents one young person’s experience and can be compared with other records.</button>
+<button type="button" data-case="2">It proves the exact daily food ration for every person in the ghetto.</button>
+</div>
+<div class="module-feedback" id="case-feedback" role="status" aria-live="polite">Choose the strongest evidence-based claim.</div>
+<p class="module-source">Explore the <a href="https://encyclopedia.ushmm.org/content/en/article/give-me-your-children-voices-from-the-lodz-ghetto" target="_blank" rel="noopener">USHMM diary records and context ↗</a>.</p>
+</article>
+<article class="mini-module myth-module" id="myth-fact">
+<div class="module-top"><span class="module-label">03 · MYTH OR FACT?</span><span class="module-symbol">?</span></div>
+<h3>Challenge a common assumption.</h3>
+<p class="module-intro">Not every camp had the same function. What is the most accurate statement?</p>
+<div class="myth-statement">“All Nazi camps were concentration camps.”</div>
+<div class="myth-choices"><button type="button" data-myth="myth">MYTH</button><button type="button" data-myth="fact">FACT</button></div>
+<div class="module-feedback" id="myth-feedback" role="status" aria-live="polite">Make a choice to reveal the explanation.</div>
+<p class="module-source">Read the <a href="https://encyclopedia.ushmm.org/content/en/article/nazi-camps" target="_blank" rel="noopener">USHMM overview of Nazi camps ↗</a>.</p>
+</article>
+</div>
 </section>
 <section class="timeline-mini reveal" aria-label="A short historical timeline">
   <h3>Four dates. A changing system of persecution.</h3>
@@ -361,5 +444,35 @@ window.showRubric = function(k){
 };
 ['e','c','t'].forEach(k=>{$(k+'-next').addEventListener('click',()=>next(k));render(k)});
 if(location.hash==='#choices')switchActivity('choices');else if(location.hash==='#today')switchActivity('today');else if(location.hash==='#stories')switchActivity('stories');else if(location.hash==='#memory')switchActivity('memory');else switchActivity('evidence');
+</script>
+
+<script>
+(function(){
+const stages=[
+{date:"1933 · DICTATORSHIP",title:"A democracy is dismantled",copy:"After Adolf Hitler became chancellor on 30 January, the Nazi Party rapidly transformed Germany into a one-party dictatorship. Persecution of Jews began almost immediately."},
+{date:"1935 · DISCRIMINATION IN LAW",title:"Antisemitism becomes state law",copy:"The Nuremberg Laws stripped Jews of German citizenship and prohibited marriage between Jews and people classified as “German or related blood”. The laws institutionalised racial antisemitism."},
+{date:"1939 · WAR AND OCCUPATION",title:"Persecution spreads across Europe",copy:"Germany invaded Poland on 1 September. As Nazi Germany conquered and occupied more territory, millions more Jewish people came under German control. Ghettos were established in occupied territories."},
+{date:"1941 · MASS MURDER",title:"Mass shootings escalate",copy:"After Germany invaded the Soviet Union in June, mobile killing units and other German forces, with collaborators, murdered Jewish communities in mass shootings. The systematic mass murder of Europe’s Jews expanded."},
+{date:"1945 · DEFEAT OF NAZI GERMANY",title:"The war in Europe ends",copy:"Allied forces defeated Nazi Germany in May 1945. The Holocaust had taken the lives of six million Jews. Survivors faced displacement, loss and the difficult work of rebuilding lives."}
+];
+const date=document.getElementById("history-date"),title=document.getElementById("history-title"),copy=document.getElementById("history-copy");
+document.querySelectorAll(".history-step").forEach(btn=>btn.addEventListener("click",()=>{
+const s=stages[Number(btn.dataset.history)];if(!s)return;
+document.querySelectorAll(".history-step").forEach(b=>b.classList.toggle("is-active",b===btn));
+date.textContent=s.date;title.textContent=s.title;copy.textContent=s.copy;
+}));
+const caseButtons=document.querySelectorAll("[data-case]"),caseFeedback=document.getElementById("case-feedback");
+caseButtons.forEach(btn=>btn.addEventListener("click",()=>{
+const correct=btn.dataset.case==="1";
+caseButtons.forEach(b=>{b.disabled=true;b.classList.toggle("is-right",b.dataset.case==="1");if(b===btn&&!correct)b.classList.add("is-wrong")});
+caseFeedback.innerHTML=correct?"<strong>That’s the strongest claim.</strong>The diary documents one young person’s experience. Other diaries, records and research are needed to understand the wider conditions and differences between people’s experiences.":"<strong>Not quite — look at the scope of the source.</strong>A personal diary can document its author’s experience. It cannot, on its own, establish what every resident experienced or prove an exact ration for everyone.";
+}));
+const mythButtons=document.querySelectorAll("[data-myth]"),mythFeedback=document.getElementById("myth-feedback");
+mythButtons.forEach(btn=>btn.addEventListener("click",()=>{
+const correct=btn.dataset.myth==="myth";
+mythButtons.forEach(b=>{b.disabled=true;b.classList.toggle("is-right",b.dataset.myth==="myth");if(b===btn&&!correct)b.classList.add("is-wrong")});
+mythFeedback.innerHTML=correct?"<strong>Correct: myth.</strong>Nazi Germany operated different types of camps and detention sites, including concentration camps, forced-labour camps, transit camps and killing centres. Their purposes and histories were not interchangeable.":"<strong>This is a myth.</strong>“Camp” is a broad term. The Nazi system included different kinds of sites with different functions, including concentration camps and killing centres.";
+}));
+})();
 </script>
 </body></html>
