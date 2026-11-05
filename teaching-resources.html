@@ -163,14 +163,7 @@
 <g class="pin" tabindex="0" role="button" aria-label="Călărași, Romania" data-place="calarasi"><circle cx="539" cy="240" r="7"/><text x="547" y="254">Călărași</text></g>
 <g class="pin" tabindex="0" role="button" aria-label="Podu Iloaiei, Romania" data-place="podu"><circle cx="530" cy="180" r="6"/><text x="446" y="168">Podu Iloaiei</text></g>
 <g id="area-layer"><ellipse cx="610" cy="155" rx="42" ry="25" fill="#d8b56c" opacity=".4" stroke="#a34f37" stroke-dasharray="4 4"/><g class="pin" tabindex="0" role="button" aria-label="Romanian-administered Transnistria" data-place="transnistria"><circle cx="610" cy="155" r="7"/><text x="610" y="158" text-anchor="middle" font-size="11">Transnistria*</text></g>
-<g class="pin" tabindex="0" role="button" aria-label="Sofia, Bulgaria" data-place="sofia"><circle cx="426" cy="269" r="8"/><text x="435" y="273">Sofia</text></g>
-<g class="pin" tabindex="0" role="button" aria-label="Lom, Bulgaria" data-place="lom"><circle cx="425" cy="247" r="8"/><text x="435" y="244">Lom</text></g>
-<g class="pin" tabindex="0" role="button" aria-label="Skopje, Bulgarian-occupied Macedonia" data-place="skopje"><circle cx="372" cy="283" r="8"/><text x="319" y="279">Skopje</text></g>
-<g class="pin" tabindex="0" role="button" aria-label="Bitola, Bulgarian-occupied Macedonia" data-place="bitola"><circle cx="370" cy="301" r="7"/><text x="379" y="313">Bitola</text></g></g>
-<g class="pin" tabindex="0" role="button" aria-label="Sofia, Bulgaria" data-place="sofia"><circle cx="426" cy="269" r="8"/><text x="435" y="273">Sofia</text></g>
-<g class="pin" tabindex="0" role="button" aria-label="Lom, Bulgaria" data-place="lom"><circle cx="425" cy="247" r="8"/><text x="435" y="244">Lom</text></g>
-<g class="pin" tabindex="0" role="button" aria-label="Skopje, Bulgarian-occupied Macedonia" data-place="skopje"><circle cx="372" cy="283" r="8"/><text x="319" y="279">Skopje</text></g>
-<g class="pin" tabindex="0" role="button" aria-label="Bitola, Bulgarian-occupied Macedonia" data-place="bitola"><circle cx="370" cy="301" r="7"/><text x="379" y="313">Bitola</text></g></svg>
+</g></svg>
 <p class="mapnote">Schematic locator · approximate placement · not to scale. Dashed lines indicate selected documented directions, not surveyed rail routes. For a broader institutional map collection, see <a href="https://encyclopedia.ushmm.org/content/en/gallery/the-holocaust-maps" target="_blank" rel="noopener">USHMM historical maps</a>. *Transnistria was a Romanian-administered occupation zone east of the Dniester, not a single town or deportation destination point.</p></div>
 <div class="timeline" id="eventList">
 <button class="event" data-event="1933"><b>1933 · Germany</b>The Nazi Party comes to power; state persecution of Jews begins.</button>
@@ -256,9 +249,38 @@ const events={
 '1943core':{title:'March 1943 · Bulgaria’s pre-war core provinces',text:'The Bulgarian government did not deport Jews from the pre-war core provinces to Nazi killing centres in March 1943. Planned deportations were halted after protests and interventions by parliamentarians, clergy and others; the government cancelled them in May. In the same month, Bulgarian authorities forcibly expelled almost 20,000 Jews from Sofia to the countryside, confiscated property and subjected men to forced labour. Jews in Bulgaria proper remained exposed to antisemitic legislation, restrictions and persecution. This history is distinct from the deportations from Bulgarian-occupied territories.',place:'sofia',source:'https://encyclopedia.ushmm.org/content/en/article/bulgaria'},
 '1943thrace':{title:'March 1943 · Bulgarian-occupied Thrace → Treblinka',text:'Bulgarian authorities deported Jews from Greek Thrace under Bulgarian occupation. USHMM records assembly points at Gorna Dzhumaya and Dupnitsa. For one group from Kavala, Seres and Drama, the museum states that they were probably taken via the Danube port of Lom, then by ship to Vienna, and onward to Treblinka. The Lom route is therefore described by USHMM as probable, not as a fully established route for every deportee. This must not be conflated with the separate transports of Macedonian Jews assembled in Skopje.',place:'lom',source:'https://encyclopedia.ushmm.org/content/en/article/bulgaria'}
 }
-function showEvent(key){const e=events[key];if(!e)return;document.querySelectorAll('.event').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.event===key)));document.getElementById('eventDetail').innerHTML='<b>'+e.title+'</b><p>'+e.text+'</p><p><a href=\"'+e.source+'\" target=\"_blank\" rel=\"noopener\" style=\"color:#f8f6ef\">Read the institutional source ↗</a></p>';document.querySelectorAll('.pin').forEach(p=>p.querySelector('circle').setAttribute('r',p.dataset.place===e.place?'11':'8'));}
+const placeEvents={'lodz':'1940','chelmno':'1942lodz','terezin':'1942','iasi':'1941','calarasi':'1941','podu':'1941','transnistria':'1941trans','bitola':'1943bitola','skopje':'1943bitola','lom':'1943thrace','sofia':'1943core','treblinka':'1943bitola'};
+const placeQuestions={
+lodz:'Compare the ghetto establishment record with a diary or photograph. What does each source reveal about daily life under confinement?',
+chelmno:'What evidence identifies Chełmno as a killing centre, and how does it connect to deportations from the Łódź ghetto?',
+treblinka:'How do transport records and survivor testimony help establish what happened at Treblinka?',
+iasi:'How do Romanian administrative records and survivor accounts document the Iași pogrom and the deportations that followed?',
+calarasi:'What can transport records tell us about the forced journeys from Iași? What would you need to learn about conditions on the trains?',
+podu:'Compare the records for the two deportation trains. What details can be confirmed, and what needs careful qualification?',
+transnistria:'Why is Transnistria described as an occupation zone rather than one camp or one town? Explore the range of places and policies involved.',
+sofia:'How did the experience of Jews in Bulgaria’s pre-war territory differ from that of Jews in Bulgarian-occupied territories?',
+lom:'Which parts of the route described by the museum are documented, and which part is identified as probable?',
+skopje:'What do assembly and transport records tell us about the deportation of Jews from Bulgarian-occupied Macedonia?',
+bitola:'How do local community records and deportation documentation help reconstruct the fate of Jews from Bitola?',
+terezin:'How did Terezín function as a ghetto, transit site and propaganda setting at different moments?'
+};
+function showEvent(key,selectedPlace){
+ const e=events[key];if(!e)return;
+ document.querySelectorAll('.event').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.event===key)));
+ document.querySelectorAll('.pin').forEach(p=>p.querySelector('circle').setAttribute('r',p.dataset.place===(selectedPlace||e.place)?'11':'8'));
+ document.querySelectorAll('.place-choice').forEach(b=>b.setAttribute('aria-pressed',String(b.dataset.place===(selectedPlace||e.place))));
+ const detail=document.getElementById('eventDetail');detail.innerHTML='';
+ const title=document.createElement('b');title.textContent=e.title;
+ const body=document.createElement('p');body.textContent=e.text;
+ const question=document.createElement('div');question.className='place-context';question.textContent='INVESTIGATE: '+(placeQuestions[selectedPlace||e.place]||'Which additional source could confirm, complicate or challenge this account?');
+ const link=document.createElement('a');link.href=e.source;link.target='_blank';link.rel='noopener';link.style.color='#f8f6ef';link.textContent='Read the institutional source ↗';
+ detail.append(title,body,question,link);
+}
 document.querySelectorAll('.event').forEach(b=>b.addEventListener('click',()=>showEvent(b.dataset.event)));
-document.querySelectorAll('.pin').forEach(p=>{const match={'lodz':'1940','chelmno':'1942lodz','terezin':'1942','iasi':'1941','calarasi':'1941','podu':'1941','transnistria':'1941trans','bitola':'1943bitola','skopje':'1943bitola','lom':'1943thrace','sofia':'1943core','treblinka':'1943bitola'};p.addEventListener('click',()=>showEvent(match[p.dataset.place]));p.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();showEvent(match[p.dataset.place]);}});});
+document.querySelectorAll('.pin').forEach(p=>{p.addEventListener('click',()=>showEvent(placeEvents[p.dataset.place],p.dataset.place));p.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();showEvent(placeEvents[p.dataset.place],p.dataset.place);}});});
+document.querySelectorAll('.place-choice').forEach(b=>b.addEventListener('click',()=>showEvent(placeEvents[b.dataset.place],b.dataset.place)));
+const placeFilter=document.getElementById('placeFilter');
+placeFilter.addEventListener('change',()=>document.querySelectorAll('.place-choice').forEach(b=>{b.hidden=placeFilter.value!=='all'&&b.dataset.region!==placeFilter.value;}));
 const routesToggle=document.getElementById('routesToggle'),areasToggle=document.getElementById('areasToggle');routesToggle.addEventListener('click',()=>{const on=routesToggle.getAttribute('aria-pressed')!=='true';routesToggle.setAttribute('aria-pressed',String(on));document.getElementById('route-layer').style.display=on?'':'none';});areasToggle.addEventListener('click',()=>{const on=areasToggle.getAttribute('aria-pressed')!=='true';areasToggle.setAttribute('aria-pressed',String(on));document.getElementById('area-layer').style.display=on?'':'none';});
 const teacher=document.getElementById('teacherMode'),student=document.getElementById('studentMode');
 function setMode(isTeacher){document.querySelectorAll('.teacher-only').forEach(x=>x.style.display=isTeacher?'block':'none');document.querySelectorAll('.student-only').forEach(x=>x.style.display=isTeacher?'none':'block');teacher.setAttribute('aria-pressed',String(isTeacher));student.setAttribute('aria-pressed',String(!isTeacher));}
