@@ -84,6 +84,17 @@ main.wrap{padding-top:26px}
 @media(max-width:520px){.tabs{grid-template-columns:1fr 1fr}.tabs button{min-height:78px;padding:11px}.story-strip{grid-template-columns:1fr}.story-card{min-height:185px}.mini-track{grid-template-columns:1fr 1fr;gap:18px}.mini-track:before{display:none}.launch-steps{grid-template-columns:1fr 1fr}}
 @media(prefers-reduced-motion:reduce){.reveal{animation:none}.tabs button,.options button,.visual-options button{transition:none}}
 
+
+/* ORAL HISTORY LISTENING STATION */
+.listening-station{background:#edf4ef;border:1px solid #cbdcd1;border-top:5px solid var(--gold)}
+.listening-station h3{font-size:clamp(22px,3vw,29px);font-weight:820;letter-spacing:-.04em;margin:8px 0}
+.listen-steps{display:grid;grid-template-columns:repeat(3,1fr);gap:10px;margin:18px 0}
+.listen-steps div{background:#fff;border:1px solid #dce4df;border-radius:12px;padding:15px}
+.listen-steps b{display:block;font-size:12px;letter-spacing:.07em;margin-bottom:7px;color:#a64c39}
+.listen-steps span{display:block;font-size:13px;line-height:1.45;color:#536572}
+.listen-link{display:inline-flex;padding:11px 15px;border-radius:99px;background:#123b46;color:#fff!important;font-weight:800;text-decoration:none}
+.listen-link:hover{background:#245c64;color:#fff}
+@media(max-width:650px){.listen-steps{grid-template-columns:1fr}}
 </style>
 </head>
 <body>
@@ -224,6 +235,14 @@ One account cannot represent…"></textarea><p class="meta">For classroom use, t
 What the record confirms…
 What remains unknown…"></textarea></div>
 
+<div class="panel listening-station">
+<div class="eyebrow">Listen · Oral history</div><h3>One voice. One minute. Three questions.</h3>
+<p>Survivor testimony is a historical source: personal, situated and shaped by memory. Listen to a short excerpt in the archive, then return to the questions below. You do not need to listen to graphic or distressing material to complete this activity.</p>
+<div class="listen-steps"><div><b>01 · Before</b><span>Who is speaking? What do you know about the recording and its context?</span></div><div><b>02 · During</b><span>Notice one detail the speaker remembers. Do not treat it as a complete account of the Holocaust.</span></div><div><b>03 · After</b><span>What can this testimony help you understand? What would need another source?</span></div></div>
+<p><a class="listen-link" href="oral-stories.html">Choose a testimony in the Oral Stories archive guide ↗</a></p>
+<textarea aria-label="Oral history listening reflection" placeholder="A detail I heard…&#10;The context I checked…&#10;One thing this testimony cannot tell me on its own…"></textarea>
+<p class="meta">Respect the speaker’s words and the archive’s description. Do not imitate a survivor’s voice or turn testimony into a performance.</p>
+</div>
 <div class="panel"><div class="eyebrow">Stories · Children's Voices</div><h3>“The Butterfly” — poetry, memory and Terezín</h3><p>The handbook proposes an interdisciplinary study of Pavel Friedmann’s poem “The Butterfly” (1942), written in the context of the Terezín ghetto. Explore how literary images and contrasts can preserve a particular voice, while keeping the historical context and the limits of one poem in view.</p><p><strong>Read and investigate:</strong> use a teacher-verified edition of the poem and a reliable historical source about Pavel Friedmann and Terezín. Do not reproduce an unverified text or treat a creative interpretation as a historical quotation.</p><ul class="prompt-list"><li>What contrasts does the poem create between the world inside the ghetto and the world beyond it?</li><li>How does the butterfly function as an image or symbol? Which words support your interpretation?</li><li>What can a poem reveal about a writer’s expression and perspective, and what historical questions require other sources?</li><li>How does the historical context change the way you read the poem?</li></ul><div class="question"><h3>Which statement best describes the source?</h3><p class="prompt">A poem written by a prisoner in a ghetto is used in a lesson about the Holocaust. What is the most careful approach?</p><div class="options" id="poem-options"><button type="button" onclick="poemAnswer(0)">Treat the poem as a complete account of every child’s experience.</button><button type="button" onclick="poemAnswer(1)">Read its language closely, establish its historical context and recognise it as one particular creative voice.</button><button type="button" onclick="poemAnswer(2)">Ignore the poem’s form and symbolism because only dates are historical evidence.</button></div><div id="poem-feedback" class="feedback" role="status" aria-live="polite"></div></div><h3>Creative response — clearly your own</h3><p>Create a visual, sound-based or written response inspired by the poem’s themes. Label it as a contemporary response; do not imitate Friedmann’s voice or present new lines as his words.</p><textarea aria-label="Children's Voices reflection" placeholder="One image that stands out…&#10;The historical context I checked…&#10;My response and why I chose this form…"></textarea></div>
 </section>
 <section id="activity-memory" class="activity" role="tabpanel" aria-labelledby="tab-memory">
