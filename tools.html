@@ -140,6 +140,13 @@ main.wrap{padding-top:26px}
 .module-source a{font-weight:800}
 @media(max-width:850px){.module-grid{grid-template-columns:1fr 1fr}.myth-module{grid-column:1/-1}}
 @media(max-width:600px){.module-grid{grid-template-columns:1fr}.myth-module{grid-column:auto}.module-heading{display:block}.module-heading>p{margin-top:8px}.module-intro{min-height:0}}
+
+/* MAKE THE FOUR LEARNING STEPS REAL NAVIGATION */
+.launch-steps .launch-step{display:block;color:inherit;text-decoration:none;cursor:pointer;transition:transform .18s,border-color .18s,box-shadow .18s;position:relative}
+.launch-steps .launch-step:hover,.launch-steps .launch-step:focus-visible{transform:translateY(-3px);border-color:#8aa99e;box-shadow:0 10px 24px #102f3b16;outline:none}
+.launch-step b{display:flex;align-items:center;justify-content:space-between;gap:8px}
+.launch-step b i{font-style:normal;color:#a34f37;font-size:15px;opacity:.7}
+.launch-steps .launch-step:focus-visible{outline:3px solid var(--rust);outline-offset:3px}
 </style>
 </head>
 <body>
@@ -147,12 +154,12 @@ main.wrap{padding-top:26px}
 <header><div class="wrap"><div class="eyebrow">OPEN THE CASE FILE · FOLLOW THE EVIDENCE · THINK FOR YOURSELF</div><h1>Investigate the evidence.<br>Understand the choices.</h1><p>Five ways to investigate history. Follow evidence, explore choices under pressure, decode stories and places, and practise checking what appears in your feed.</p></div></header>
 <section class="wrap lab-launch reveal" aria-label="Start exploring">
   <div class="launch-lead"><div class="eyebrow">YOUR LEARNING LAB · 5 WAYS IN</div><h2>History is not a feed. Learn to read what is behind it.</h2><p>Open a case, follow a clue, compare records and build your own evidence-based explanation. You do not need to know everything before you start — curiosity is the first tool.</p></div>
-  <div class="launch-steps">
-    <div class="launch-step"><span>01 / NOTICE</span><b>Look closely</b><p>Start with what a source actually shows.</p></div>
-    <div class="launch-step"><span>02 / TRACE</span><b>Find the context</b><p>Who made it, when, where and why?</p></div>
-    <div class="launch-step"><span>03 / CONNECT</span><b>Compare clues</b><p>Put different records beside each other.</p></div>
-    <div class="launch-step"><span>04 / REFLECT</span><b>Make a careful claim</b><p>Say what you know — and what you do not.</p></div>
-  </div>
+  <nav class="launch-steps" aria-label="Four steps for investigating a source">
+    <a class="launch-step" href="#visual-lab"><span>01 / NOTICE</span><b>Look closely <i aria-hidden="true">↗</i></b><p>Start with what a source actually shows.</p></a>
+    <a class="launch-step" href="#interactive-case"><span>02 / TRACE</span><b>Find the context <i aria-hidden="true">↗</i></b><p>Who made it, when, where and why?</p></a>
+    <a class="launch-step" href="#activity-evidence"><span>03 / CONNECT</span><b>Compare clues <i aria-hidden="true">↗</i></b><p>Put different records beside each other.</p></a>
+    <a class="launch-step" href="#e-reflection"><span>04 / REFLECT</span><b>Make a careful claim <i aria-hidden="true">↗</i></b><p>Say what you know — and what you do not.</p></a>
+  </nav>
 </section>
 <main class="wrap">
 <div class="notice"><strong>For teachers and learners.</strong> These activities use short, clearly labelled adaptations of information from historical sources and museum research. Adaptations are not presented as original quotations. The Holocaust was the systematic, state-sponsored persecution and murder of six million European Jews by Nazi Germany and its collaborators. Other groups were also persecuted and murdered. Treat testimony and historical records with care; do not rank suffering or judge people under coercion as if they had free choices.</div>
