@@ -29,6 +29,27 @@
 .guide-source a{color:var(--guide-lime)}
 .guide-footnote{font-size:12px;color:#d8e6e6;margin:14px 0 0}
 @media(max-width:650px){.essential-guide{padding:20px;border-radius:15px}.guide-facts{grid-template-columns:1fr 1fr}.guide-topics{grid-template-columns:1fr}}
+
+/* Short visual explainer: escalation without a false one-size-fits-all timeline */
+.escalation{margin:24px 0 22px;padding:20px;background:#f2f6f1;border:1px solid #d9e4dc;border-radius:15px;color:#132f37}
+.escalation-head{display:flex;justify-content:space-between;gap:12px;align-items:end;flex-wrap:wrap}
+.escalation-head h3{font:850 clamp(21px,3vw,29px)/1.05 Inter,system-ui,sans-serif;letter-spacing:-.04em;margin:0 0 5px}
+.escalation-head p{font-size:12px;color:#56686b;margin:0}
+.escalation-track{display:grid;grid-template-columns:repeat(7,minmax(0,1fr));gap:7px;margin:20px 0 13px}
+.escalation-step{border:1px solid #cbd9d2;background:#fff;border-radius:10px;padding:11px 8px;text-align:left;cursor:pointer;min-height:90px;transition:transform .16s,border-color .16s,background .16s}
+.escalation-step:hover{transform:translateY(-3px);border-color:#a34f37}
+.escalation-step[aria-pressed=true]{background:#123b46;color:#fff;border-color:#123b46}
+.escalation-step b{display:block;font-size:15px;letter-spacing:-.02em}
+.escalation-step span{display:block;font-size:10px;line-height:1.3;margin-top:5px;color:#637578}
+.escalation-step[aria-pressed=true] span{color:#dce8e3}
+.escalation-detail{background:#fff;border-left:4px solid #ef684d;border-radius:0 10px 10px 0;padding:16px 18px;min-height:118px}
+.escalation-detail strong{display:block;font-size:16px;margin-bottom:6px}
+.escalation-detail p{font-size:14px;margin:0 0 8px;color:#42575b}
+.escalation-detail a{font-size:12px;font-weight:800}
+.escalation-note{font-size:11px;color:#5a6b6c;margin:11px 0 0}
+@media(max-width:760px){.escalation-track{grid-template-columns:repeat(4,minmax(0,1fr))}}
+@media(max-width:480px){.escalation-track{grid-template-columns:repeat(2,minmax(0,1fr))}.escalation-step{min-height:72px}}
+@media(prefers-reduced-motion:reduce){.escalation-step{transition:none}}
 </style></head><body>
 <div class="top"><div class="wrap"><a class="brand" href="index.html">LEARNING LAB <small>HOLOCAUST EDUCATION</small></a><nav class="language-switch" aria-label="Choose language"><span>LANGUAGE</span><a href="teaching-resources.html" lang="en" aria-current="page">EN</a><a href="pl/teaching-resources.html" lang="pl" title="Polski — materiały edukacyjne">PL</a><a href="ro/teaching-resources.html" lang="ro" title="Română — materiale educaționale">RO</a><a href="bg/teaching-resources.html" lang="bg" title="Български — учебни ресурси">BG</a></nav></div></div>
 <header class="hero"><div class="wrap"><div class="eyebrow">Teaching resources · Student inquiry</div><h1>From historical knowledge to careful understanding.</h1><p>A practical resource hub: ready-to-use lesson plans, a place-based chronology, key terms, a method for analysing difficult sources, and a curated directory of archives and museums.</p><p><a class="btn" href="index.html">← Back to the Learning Lab</a></p></div></header>
@@ -50,6 +71,25 @@
     <div class="guide-fact"><b>1933–1945</b><span>The period of Nazi rule and the Holocaust in Europe</span></div>
     <div class="guide-fact"><b>6 million</b><span>Jewish women, men and children murdered</span></div>
     <div class="guide-fact"><b>Across Europe</b><span>Persecution and murder by Nazi Germany and its collaborators</span></div>
+  </div>
+
+  <div class="escalation" aria-labelledby="escalation-title">
+    <div class="escalation-head"><div><div class="eyebrow">THE BIG PICTURE · TAP A STAGE</div><h3 id="escalation-title">How persecution escalated</h3><p>Choose a date to see what changed.</p></div><span class="pill">Interactive timeline</span></div>
+    <div class="escalation-track" role="group" aria-label="Stages in the escalation of Nazi persecution">
+      <button class="escalation-step" type="button" data-stage="1933" aria-pressed="true"><b>1933</b><span>Dictatorship & exclusion</span></button>
+      <button class="escalation-step" type="button" data-stage="1935" aria-pressed="false"><b>1935</b><span>Discrimination in law</span></button>
+      <button class="escalation-step" type="button" data-stage="1938" aria-pressed="false"><b>1938</b><span>Organised violence</span></button>
+      <button class="escalation-step" type="button" data-stage="1939" aria-pressed="false"><b>1939</b><span>War & occupation</span></button>
+      <button class="escalation-step" type="button" data-stage="1941" aria-pressed="false"><b>1941</b><span>Mass shootings</span></button>
+      <button class="escalation-step" type="button" data-stage="1942" aria-pressed="false"><b>1942–45</b><span>Deportations & killing centres</span></button>
+      <button class="escalation-step" type="button" data-stage="1945" aria-pressed="false"><b>1945</b><span>Defeat of Nazi Germany</span></button>
+    </div>
+    <div class="escalation-detail" id="escalation-detail" aria-live="polite">
+      <strong>1933 · Dictatorship and exclusion</strong>
+      <p>After taking power in Germany, the Nazis used state institutions to exclude Jews from public life, introduce discriminatory measures and encourage organised persecution. The mass murder of European Jews was not yet the regime’s policy in 1933.</p>
+      <a href="https://encyclopedia.ushmm.org/content/en/article/introduction-to-the-holocaust" target="_blank" rel="noopener">Read the USHMM historical overview ↗</a>
+    </div>
+    <p class="escalation-note">This is a simplified overview of key developments, not a single identical sequence in every country. Policies, timing and local conditions varied across Europe.</p>
   </div>
   <div class="guide-topics">
     <details class="guide-topic"><summary>01 · What was the Holocaust?</summary><div class="topic-body"><p>The Holocaust was the systematic, state-sponsored persecution and murder of six million European Jews by Nazi Germany and its collaborators. It took place in the context of World War II, but the persecution began before the war.</p><p>Jewish people were targeted because they were Jewish. Nazi leaders used antisemitic ideology, racist laws, propaganda, state institutions, violence and mass murder.</p><p><b>Remember:</b> Jewish people were not one single community with one experience. They had different languages, traditions, beliefs, jobs and lives across Europe.</p></div></details>
@@ -129,6 +169,27 @@
 </main></div>
 <footer class="footer"><div class="wrap">Holocaust Education · Interactive Learning Lab · <a href="index.html">Home</a> · <a href="tools.html">Interactive activities</a></div></footer>
 <script>
+
+const escalationData={
+'1933':{title:'1933 · Dictatorship and exclusion',text:'After taking power in Germany, the Nazis used state institutions to exclude Jews from public life, introduce discriminatory measures and encourage organised persecution. The mass murder of European Jews was not yet the regime’s policy in 1933.',url:'https://encyclopedia.ushmm.org/content/en/article/introduction-to-the-holocaust'},
+'1935':{title:'1935 · Discrimination becomes law',text:'The Nuremberg Laws stripped Jews of Reich citizenship and prohibited marriages between Jews and people classified by the regime as “German or related blood”. Antisemitic racial ideology was built into German law.',url:'https://encyclopedia.ushmm.org/content/en/article/nuremberg-laws'},
+'1938':{title:'1938 · Organised violence intensifies',text:'During the November pogrom, Nazi-organised violence destroyed synagogues and Jewish businesses, attacked Jewish people and led to mass arrests. The pogrom marked a major escalation, while persecution and dispossession continued.',url:'https://encyclopedia.ushmm.org/content/en/article/the-november-1938-pogrom'},
+'1939':{title:'1939 · War and occupation expand Nazi control',text:'Germany invaded Poland on 1 September 1939. As Nazi Germany conquered and occupied more territory, millions more Jewish people came under Nazi rule and the reach of persecution expanded.',url:'https://encyclopedia.ushmm.org/content/en/article/introduction-to-the-holocaust'},
+'1941':{title:'1941 · Mass shootings and systematic mass murder',text:'After Germany invaded the Soviet Union in June 1941, German killing units and their collaborators carried out mass shootings of Jewish communities. Nazi leaders moved towards the systematic murder of Europe’s Jews.',url:'https://encyclopedia.ushmm.org/content/en/article/mass-shootings-of-jews-during-the-holocaust'},
+'1942':{title:'1942–1945 · Deportations and killing centres',text:'Nazi Germany and its collaborators deported Jews from across Europe to killing centres and other sites of murder. Mass shootings, gassing operations, deadly conditions, forced labour and other forms of violence continued.',url:'https://encyclopedia.ushmm.org/content/en/article/introduction-to-the-holocaust'},
+'1945':{title:'1945 · Nazi Germany is defeated',text:'The Allied defeat of Nazi Germany in May 1945 ended Nazi rule in Europe. It did not end the consequences: survivors faced loss, displacement, antisemitism and the difficult work of rebuilding their lives.',url:'https://encyclopedia.ushmm.org/content/en/article/introduction-to-the-holocaust'}
+};
+document.querySelectorAll('.escalation-step').forEach(button=>button.addEventListener('click',()=>{
+ const item=escalationData[button.dataset.stage];if(!item)return;
+ document.querySelectorAll('.escalation-step').forEach(x=>x.setAttribute('aria-pressed',String(x===button)));
+ const box=document.getElementById('escalation-detail');
+ box.innerHTML='';
+ const title=document.createElement('strong');title.textContent=item.title;
+ const p=document.createElement('p');p.textContent=item.text;
+ const a=document.createElement('a');a.href=item.url;a.target='_blank';a.rel='noopener';a.textContent='Read the USHMM historical overview ↗';
+ box.append(title,p,a);
+}));
+
 const events={
 '1933':{title:'1933 · Germany',text:'The Nazi Party came to power in Germany in January 1933. The regime rapidly established a dictatorship and began systematic persecution of political opponents and Jews. This is the beginning of Nazi rule, not the beginning of the Holocaust as a genocide.',place:'none',source:'https://encyclopedia.ushmm.org/content/en/article/introduction-to-the-holocaust'},
 '1935':{title:'1935 · Germany',text:'The Nuremberg Laws deprived Jews of German citizenship and prohibited marriage and sexual relations between Jews and people classified as “German or related blood.” The laws institutionalised racial antisemitism in Nazi Germany.',place:'none',source:'https://encyclopedia.ushmm.org/content/en/article/nuremberg-laws'},
