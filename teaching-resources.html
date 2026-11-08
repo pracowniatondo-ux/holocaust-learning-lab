@@ -218,7 +218,7 @@
 <label>2. What kinds of evidence are listed in Source B that could add context?<textarea id="compareB" rows="3" placeholder="Consider diaries, notices, maps, bulletins..."></textarea></label>
 <label>3. What additional evidence would you need before making a claim about the deportations?<textarea id="compareC" rows="3" placeholder="Name a record, testimony or detail you would want to verify..."></textarea></label>
 </div>
-<div class="comparison-actions"><button type="button" id="compareReset">Clear notes</button><span id="compareStatus" aria-live="polite">Notes remain on this page until you leave or reload.</span></div>
+<div class="comparison-actions"><button type="button" id="compareReset"><button type="button" id="compareDownload">Download notes</button>Clear notes</button><span id="compareStatus" aria-live="polite">Notes remain on this page until you leave or reload.</span></div>
 </div>
 <div class="caution"><b>Method:</b> Do not treat a photograph as a transparent window onto the past, or a collection catalogue as if it were a single document. Identify creator, date, purpose, provenance and limits before interpreting either source.</div>
 </section>
@@ -259,6 +259,7 @@ document.getElementById('compareReset').addEventListener('click',()=>{
  compareFields.forEach(field=>field.value='');
  document.getElementById('compareStatus').textContent='Notes cleared. You can start a new comparison.';
 });
+document.getElementById('compareDownload').addEventListener('click',()=>{const content=compareFields.map((field,index)=>['Question '+(index+1),field.value].join('\\n')).join('\\n\\n');const blob=new Blob([content],{type:'text/plain;charset=utf-8'});const url=URL.createObjectURL(blob);const a=document.createElement('a');a.href=url;a.download='source-comparison-en.txt';a.click();URL.revokeObjectURL(url);document.getElementById('compareStatus').textContent='Notes prepared for download.';});
 compareFields.forEach(field=>field.addEventListener('input',()=>{
  document.getElementById('compareStatus').textContent='Your notes are available in this page until you leave or reload.';
 }));
