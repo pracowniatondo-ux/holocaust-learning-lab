@@ -29,3 +29,12 @@ Câmpurile de reflecție de pe site funcționează local în browser și nu sunt
 
 SURSE
 Folosește înregistrările USHMM, POLIN, Arolsen Archives, Fortunoff Video Archive și USC Shoah Foundation. Verifică regulile actuale de acces, licențele și drepturile de reproducere înainte de descărcarea sau publicarea materialelor.
+
+ACTUALIZAREA MODULELOR — NOIEMBRIE 2026
+Cele patru versiuni lingvistice includ acum același set de activități de bază: o cronologie scurtă, un studiu de caz despre ghetoul din Łódź, un exercițiu „Mit sau fapt?” și o stație de ascultare a mărturiilor. Centrul de resurse include ghidul esențial, un atlas cu 12 locuri și Laboratorul surselor, care compară fișa unei fotografii USHMM cu descrierea unei colecții YIVO.
+
+LABORATORUL SURSELOR — ÎNDRUMARE
+Fișa fotografiei USHMM identifică o imagine a deportării din ghetoul din Łódź către Chełmno în aprilie 1942 și îl indică drept autor pe Walter Genewein, asociat administrației germane a ghetoului. Materialul YIVO este descrierea unei colecții cu materiale din perioada 1940–1965, nu un document individual digitizat. Nu toate materialele enumerate sunt disponibile online. Cereți elevilor să distingă între fișa unei fotografii și descrierea unei colecții și să precizeze ce poate și ce nu poate demonstra fiecare sursă.
+
+NOTE DIGITALE
+Câmpurile pentru comparație și reflecția după ascultare sunt temporare: nu sunt trimise către un server și dispar la reîncărcarea sau părăsirea paginii. Dacă elevii doresc să-și păstreze lucrul, pot copia doar notițe educaționale, fără date sensibile. Nu solicitați dezvăluiri personale sau traumatice.
