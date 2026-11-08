@@ -165,3 +165,13 @@ The resources use semantic HTML sections, keyboard-operable timeline buttons and
 
 EDITORIAL REVIEW STATUS
 The current content has been checked for JavaScript syntax and for the presence of key source links. This is not a substitute for a specialist historian's review or a full live-browser accessibility audit. Before formal publication, ask a Holocaust historian or a relevant museum educator to review the chronology, terminology, map routes and teaching notes; check each archive item's current caption, catalogue record and reuse conditions.
+
+
+UPDATED MODULES — NOVEMBER 2026
+The four language versions now include the same core additions in the learning tools: a short chronology, a source-based case file about the Łódź ghetto, a myth-check activity distinguishing concentration camps from other Nazi sites, and a testimony listening station. The teaching resources hub also includes the Essential Guide, a 12-place atlas and a Source Lab comparing a USHMM photograph record with the YIVO collection description.
+
+SOURCE LAB — FACILITATION
+The photograph record identifies an image of deportation from the Łódź ghetto to Chełmno in April 1942 and attributes it to Walter Genewein, associated with the German ghetto administration. The YIVO item is a collection-level description covering materials dated 1940–1965; it is not an individual digitised document, and not every listed item is available online. Ask learners to distinguish an image record from a collection description and to identify what each can and cannot establish.
+
+DIGITAL REFLECTION
+The new comparison fields and testimony reflection field are temporary browser-page notes. They are not saved to a server and are lost when the page is reloaded or left. Ask learners to copy only non-sensitive learning notes if they need to keep their work. Never request personal or traumatic disclosures.
